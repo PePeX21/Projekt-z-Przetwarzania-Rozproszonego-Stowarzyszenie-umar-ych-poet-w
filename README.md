@@ -1,5 +1,5 @@
 # Projekt-z-Przetwarzania-Rozproszonego-Stowarzyszenie-umar-ych-poet-w
-Opis algorytmu<br />
+1. Opis algorytmu<br />
 Odgórnie podana jest liczba poetów, którzy są oddzielnymi procesami. W przypadku
 braku dostępnych kółek, to proces decyduje się na kandydaturę na lidera. Korzystając z
 algorytmu zegaru lamporta do sekcji krytycznej zostają proces ma szansę zostać liderem.
