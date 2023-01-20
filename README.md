@@ -36,7 +36,7 @@ powinien wybrać pokój, zatem wybierze 2 i poinformuje o tym pozostałych wolon
 którzy skreślą 2 z listy dostępnych dla siebie pokoi.
 <br />
 <br />
-2. Założenia.
+2. Założenia <br />
 - Kanały między procesami są FIFO i niezawodne.<br />
 - Procesy nie ulegają awarii.<br />
 - Za moment zakończenia uznajemy moment, kiedy jedno kółko kończy libacje i
@@ -46,7 +46,7 @@ przestaje istnieć.<br />
 - broadcast wysyłany jest do wszystkich z wyłączeniem siebie samego, n-1.<br />
 <br />
 <br />
-3. Złożoność czasowa.<br />
+3. Złożoność czasowa <br />
 Najpierw procesy ubiegają się o sekcje krytyczną, w jej skład wchodzą 3 tury - REQUEST,
 REPLY, RELEASE. Następnie, gdy proces zostanie już liderem, to broadcastuje informacje o
 swoim powstaniu do wszystkich (+1 tura). Procesy odsyłają mu swoje decyzje o dołączeniu
@@ -61,7 +61,7 @@ poetów w grupie przez lidera informacja o usunięciu grupy (+1 tura).<br />
 Złożoność czasowa:10
 <br />
 <br />
-4. Złożoność komunikacyjna<br />
+4. Złożoność komunikacyjna <br />
 Ubieganie się o sekcję krytyczną posiada złożoność komunikacyjną o wielkości 3(n - 1) Lider
 informuje wszystkie procesy o utworzeniu nowej grupy (n -1). Procesy decydują się o
 dołączeniu lub nie i odsyłają wiadomość do lidera (n - 1). Lider odsyła swoją akceptację lub
