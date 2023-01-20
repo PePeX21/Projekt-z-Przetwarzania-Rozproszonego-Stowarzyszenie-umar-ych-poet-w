@@ -1,0 +1,1 @@
+# Projekt-z-Przetwarzania-Rozproszonego-Stowarzyszenie-umar-ych-poet-w
